@@ -1,0 +1,77 @@
+{
+  "RATES": {
+    "Tier 1": {
+      "products": {
+        "2yr Fix": { "6": 0.0589, "4": 0.0679, "3": 0.0739, "2": 0.0789 },
+        "3yr Fix": { "6": 0.0639, "4": 0.0709, "3": 0.0746, "2": 0.0779 },
+        "2yr Tracker": {
+          "6": 0.0159,
+          "4": 0.0259,
+          "3": 0.0314,
+          "2": 0.0364,
+          "isMargin": true
+        }
+      }
+    },
+    "Tier 2": {
+      "products": {
+        "2yr Fix": { "6": 0.0639, "4": 0.0729, "3": 0.0789, "2": 0.0839 },
+        "3yr Fix": { "6": 0.0689, "4": 0.0759, "3": 0.0796, "2": 0.0829 },
+        "2yr Tracker": {
+          "6": 0.0209,
+          "4": 0.0309,
+          "3": 0.0364,
+          "2": 0.0414,
+          "isMargin": true
+        }
+      }
+    },
+    "Tier 3": {
+      "products": {
+        "2yr Fix": { "6": 0.0679, "4": 0.0769, "3": 0.0829, "2": 0.0879 },
+        "3yr Fix": { "6": 0.0729, "4": 0.0799, "3": 0.0836, "2": 0.0869 },
+        "2yr Tracker": {
+          "6": 0.0239,
+          "4": 0.0339,
+          "3": 0.0394,
+          "2": 0.0444,
+          "isMargin": true
+        }
+      }
+    }
+  },
+
+  "PRODUCT_TYPES": ["2yr Fix", "3yr Fix", "2yr Tracker"],
+
+  "FEE_COLS": ["6", "4", "3", "2"],
+
+  "MIN_ICR": { "Fix": 1.25, "Tracker": 1.3 },
+  "MIN_LOAN": 150000,
+  "MAX_LOAN": 3000000,
+
+  "STANDARD_BBR": 0.04,
+  "STRESS_BBR": 0.0425,
+  "CURRENT_MVR": 0.0859,
+
+  "TERM_MONTHS": { "2yr Fix": 24, "3yr Fix": 36, "2yr Tracker": 24 },
+  "TOTAL_TERM": 10,
+
+  "REVERT_RATE": {
+    "Tier 1": { "add": 0.0 },
+    "Tier 2": { "add": 0.004 },
+    "Tier 3": { "add": 0.01 }
+  },
+
+  "ERC": {
+    "2yr Fix": ["4%", "3%", "then no ERC"],
+    "3yr Fix": ["4%", "3%", "2%", "then no ERC"],
+    "2yr Tracker": ["4%", "3%", "then no ERC"]
+  },
+
+  "MAX_ROLLED_MONTHS": 9,
+  "MAX_DEFERRED_FIX": 0.0125,
+  "MAX_DEFERRED_TRACKER": 0.02,
+  "SHOW_FEE_COLS": ["6", "4", "3", "2"],
+
+  "LEAD_TO": "leads@example.com"
+}
